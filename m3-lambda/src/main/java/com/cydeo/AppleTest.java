@@ -17,6 +17,14 @@ public class AppleTest {
         System.out.println(heavyApple);
         List<Apple> greenApple = filterApples(inventory,new AppleHeavyPredicate());
         System.out.println(greenApple);
+
+        System.out.println("__________________ using lambda___________________");
+
+        ApplePredicates weightApple =  apple -> apple.getWeight()>200;
+        filterApples(inventory,weightApple);
+
+
+
     }
 
     private static List<Apple> filterApples(List<Apple> inventory,ApplePredicates applePredicates){ // get al the apple base on the action give the result
