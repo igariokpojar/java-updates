@@ -12,5 +12,9 @@ public class main {
 
         System.out.println("How to get all the constant?");
         Currency[] currencies = Currency.values();
+
+        for (Currency currency : currencies){
+            System.out.println(currency);
+        }
     }
 }
