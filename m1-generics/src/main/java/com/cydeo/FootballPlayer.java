@@ -1,4 +1,4 @@
-package cydeo;
+package com.cydeo;
 
 public class FootballPlayer extends Player{
 

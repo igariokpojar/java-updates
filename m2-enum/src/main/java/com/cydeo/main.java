@@ -52,5 +52,7 @@ public class main {
                 System.out.println(x/y);
                 break;
         }
+        System.out.println("Operation Task");
+        calculate(3,5,Operation.PlUS);
     }
 }
