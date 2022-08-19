@@ -5,7 +5,7 @@ import java.util.stream.Stream;
 
 import static java.util.Arrays.stream;
 
-public class Main {
+public class CreateStream {
 
     public static void main(String[] args) {
 
@@ -26,6 +26,12 @@ public class Main {
                 new Course("MS",102));
 
         Stream<Course> myCourseStream = myCourses.stream();
+
+        // Creating Stream Values
+
+        Stream<Integer> stream = Stream.of(1,2,3,4,5,6);
+
+
 
 
 
