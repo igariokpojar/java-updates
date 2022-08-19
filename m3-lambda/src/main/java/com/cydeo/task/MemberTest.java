@@ -15,9 +15,9 @@ public class MemberTest {
 
         List<Person>personList = Arrays.asList(p1,p2,p3,p4); // added as a list
 
-        CheckMember checkMember  = p -> p.getGender()==Gender.MALE && p.getAge()>=18 && p.getAge()<=25;
+        CheckMember checkMember  = p -> p.getGender()==Gender.MALE && p.getAge()>=18 && p.getAge()<=25; // implement lambda
         print(personList,checkMember); // or
-        print(personList,p -> p.getGender()==Gender.MALE && p.getAge()>=18 && p.getAge()<=25);
+       // print(personList,p -> p.getGender()==Gender.MALE && p.getAge()>=18 && p.getAge()<=25);
 
 
     }
