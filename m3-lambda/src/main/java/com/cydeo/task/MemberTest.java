@@ -22,7 +22,7 @@ public class MemberTest {
 
     }
 
-    private static void print(List<Person>personList,CheckMember checkMember) {// create a method that accept different behavior
+    private static void print(List<Person>personList,CheckMember checkMember) { // create a method that accept different behavior
 
     List<Person> result = new ArrayList<>();
       for (Person person : personList){
