@@ -1,4 +1,7 @@
-package com.cydeo;
+package com.cydeo.task;
+
+import com.cydeo.task.Orange;
+
 @FunctionalInterface
 public interface OrangeFormatter {
 

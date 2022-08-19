@@ -1,4 +1,8 @@
-package com.cydeo;
+package com.cydeo.task;
+
+import com.cydeo.Color;
+import com.cydeo.task.Orange;
+import com.cydeo.task.OrangeFormatter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +12,7 @@ public class OrangeTest {
     public static void main(String[] args) {
 
         List<Orange>inventory = new ArrayList<Orange>();
-        inventory.add(new Orange(300,Color.GREEN)); // created oranges
+        inventory.add(new Orange(300, Color.GREEN)); // created oranges
         inventory.add(new Orange(100,Color.RED));
         inventory.add(new Orange(400,Color.GREEN));
         inventory.add(new Orange(350,Color.RED));
@@ -17,6 +21,17 @@ public class OrangeTest {
         prettyPrintApple(inventory,orangeLambda);
 
         prettyPrintApple(inventory,orange -> "An orange of " + orange.getWeight()+ "g"); // same implementation as above
+
+        System.out.println("---------------------------------------------------------------");
+
+        OrangeFormatter fancyFormatter = orange -> { // we put "{}" because we have more than one print statement
+            String ch = orange.getWeight()>200? "Heavy" : "Light";
+            return "A" + " "+ ch + " " + orange.getColor()+ " Orange";
+        };
+        prettyPrintApple(inventory,fancyFormatter);
+        //A Light GREEN apple
+       // A Heavy RED apple
+       // A Light GREEN apple
     }
 
     private static void prettyPrintApple(List<Orange> inventory,OrangeFormatter formatter){
