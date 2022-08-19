@@ -31,7 +31,7 @@ public class OrangeTest {
         prettyPrintApple(inventory,fancyFormatter);
         //A Light GREEN apple
        // A Heavy RED apple
-       // A Light GREEN apple
+        // A Light GREEN apple
     }
 
     private static void prettyPrintApple(List<Orange> inventory,OrangeFormatter formatter){
