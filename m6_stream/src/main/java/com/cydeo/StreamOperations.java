@@ -46,6 +46,10 @@ public class StreamOperations {
 
         list.stream().map(number ->number*2).filter(i ->i%3==0).forEach(System.out::println);
 
+        System.out.println("----------------------------------");
+
+
+
 
 
 
