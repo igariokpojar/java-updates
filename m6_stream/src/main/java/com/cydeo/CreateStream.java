@@ -25,10 +25,10 @@ public class CreateStream {
                 new Course("DS",101),
                 new Course("MS",102));
 
-        Stream<Course> myCourseStream = myCourses.stream();
+        // How to create Stream?
+        Stream<Course> myCourseStream = myCourses.stream(); // Stream creation
 
         // Creating Stream Values
-
         Stream<Integer> stream = Stream.of(1,2,3,4,5,6);
 
 
