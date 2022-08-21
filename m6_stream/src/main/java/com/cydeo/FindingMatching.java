@@ -65,14 +65,7 @@ public class FindingMatching {
                 .reduce(Integer::sum)
                 .get());
 
-        //Max and Min
-        Optional<Integer> min = numbers.stream().reduce(Integer::min);
-        Optional<Integer> max = numbers.stream().reduce(Integer::max);
-        Optional<Integer> sum = numbers.stream().reduce(Integer::sum);
 
-        System.out.println("Min:" + min.get());
-        System.out.println("Max:" + max.get());
-        System.out.println("Sum:" + sum.get());
 
 
 
