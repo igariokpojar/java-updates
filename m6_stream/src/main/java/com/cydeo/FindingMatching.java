@@ -4,6 +4,7 @@ import com.cydeo.task.Dish;
 import com.cydeo.task.DishData;
 
 import java.util.Optional;
+import java.util.stream.IntStream;
 
 public class FindingMatching {
 
@@ -25,6 +26,15 @@ public class FindingMatching {
         System.out.println("FIND ANY");
        Optional<Dish> dish =  DishData.getAll().stream().filter(Dish::isVegetarian).findAny();
         System.out.println(dish.get());
+
+        System.out.println("FIND FIRST");
+        Optional<Dish> dish2 =  DishData.getAll().stream().filter(Dish::isVegetarian).findFirst();
+        System.out.println(dish2.get());
+
+        // PARALLEL STREAMS (Async) the action can happen randomly
+        System.out.println(IntStream.range(0,100).parallel().findAny()); // Is creating number between 0-100 randomly
+        System.out.println(IntStream.range(0,100).parallel().findFirst()); // Is getting firsts base on the condition
+
     }
 
 
