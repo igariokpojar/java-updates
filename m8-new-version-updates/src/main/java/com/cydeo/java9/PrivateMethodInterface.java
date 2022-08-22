@@ -23,3 +23,11 @@ public interface PrivateMethodInterface {
         }
     }
 }
+/*
+In Java 7 and earlier versions, an interface can have only two things : Constant
+variables, and abstract methods. These interface methods MUST be
+implemented by classes which choose to implement the interface.
+In Java 8 version, default methods and static methods features added. In Java
+8, an interface can have 4 types : Constant variables, Abstract methods, Default
+methods, Static methods
+ */
