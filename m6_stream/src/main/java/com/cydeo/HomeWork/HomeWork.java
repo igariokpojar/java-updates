@@ -19,6 +19,9 @@ public class HomeWork {
         List<Integer> numbers1 = Arrays.asList(1,2,3);
         List<Integer> numbers2 = Arrays.asList(3,4);
 
+        numbers1.stream().flatMap(i ->numbers2.stream().map(j->new int[]{i,j}))
+                .forEach(pair -> System.out.println(Arrays.toString(pair)));
+
 
 /*
 1. Given a list of numbers how would you return a list of the square of each
