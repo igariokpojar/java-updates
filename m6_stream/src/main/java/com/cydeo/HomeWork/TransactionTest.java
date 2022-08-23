@@ -34,10 +34,7 @@ public class TransactionTest {
         //4- Return a string of all trader's names sorted alphabetically
         String result = TransactionData.getAll().stream()
                 .map(transaction -> transaction.getTrader().getName())
-                .distinct()
-                .sorted()
-                .reduce("",(name1,name2)->name1+name2 + " ");
-
+                .distinct().sorted().reduce("",(name1,name2)->name1+name2 + " ");
         System.out.println(result);
 
         //5- Are any traders based in Milan?
@@ -53,8 +50,7 @@ public class TransactionTest {
 
         //7 - What is the highest value of all the transactions
         Optional<Integer> high = TransactionData.getAll().stream()
-                .map(Transaction::getValue)
-                .reduce(Integer::max);
+                .map(Transaction::getValue).reduce(Integer::max);
         System.out.println(high.get());
 
         //8-Find the transaction with the smallest value
