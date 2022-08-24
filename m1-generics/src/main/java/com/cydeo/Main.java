@@ -4,9 +4,11 @@ import java.util.ArrayList;
 
 public class Main {
 
-    public static void main(String[] args) { // ArrayList only accept Objects belongs to Integer class
+    public static void main(String[] args) {
 
         ArrayList<Integer> items = new ArrayList<Integer>();
+        // Array List only accept Objects belong to the Integer class
+        System.out.println();
         items.add(1);
         items.add(2);
         items.add(3);
