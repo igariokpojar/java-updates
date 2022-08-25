@@ -13,7 +13,7 @@ public class Main {
 
         Calculate sum = (x,y) -> System.out.println(x+y); // implementation of abstract method Calculate by using lambda
 
-        Calculate s1 = (x,y) -> Calculator.findSum(x,y);// is the same as above ( just call the method) same implementation or Lambda implementation
+        Calculate s1 = Calculator::findSum;// is the same as above ( just call the method) same implementation or Lambda implementation
 
         // Reference to Static Method
         Calculate s2 = Calculator::findSum; // shortcut for findSum (::)
@@ -32,7 +32,7 @@ public class Main {
         BiFunction<MyClass,Integer,Double> b1 = MyClass::method;
 
 
-      Consumer<Integer> display = i -> System.out.println(i);
+      Consumer<Integer> display = i-> System.out.println();
       Consumer<Integer> display2 = System.out::println; // same as above or shortcut
 
 
